@@ -25,6 +25,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <header className="py-4 px-6 bg-gray-800 text-gray-200">
+          <nav className="flex gap-4">
+            <a href="/" className="hover:underline">
+              Home
+            </a>
+            <a href="/conference" className="hover:underline">
+              Conference
+            </a>
+          </nav>
+        </header>
         {children}
       </body>
     </html>
