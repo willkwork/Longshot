@@ -10,9 +10,10 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex flex-col justify-center items-center text-center py-24 px-6 sm:py-32 gap-6 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800"
+        className="flex flex-col justify-center items-center text-center py-24 px-6 sm:py-32 gap-6 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700"
       >
-        <h1 className="text-4xl sm:text-6xl font-bold tracking-tight">Aligning AI. Securing the Future.</h1>
+        <img src="/logo.svg" alt="Project LONGSHOT logo" className="h-16 w-auto" />
+        <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white">Aligning AI. Securing the Future.</h1>
         <p className="text-lg sm:text-xl max-w-2xl">Join world-leading experts and policymakers at the forefront of AI alignment.</p>
         <Link href="#about" className="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-3">Learn More About PROJECT LONGSHOT</Link>
       </motion.section>
@@ -46,7 +47,12 @@ export default function Home() {
       >
         <h2 className="text-3xl font-semibold">Backed by global leaders and top-tier academic institutions.</h2>
         <p className="max-w-3xl">PROJECT LONGSHOT is committed to advancing safe and aligned artificial intelligence. Our mission brings together policymakers, researchers, and industry to secure the future of AI.</p>
-        <div className="h-20 w-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center rounded">Logos Placeholder</div>
+        <div className="flex flex-wrap justify-center gap-6 py-4">
+          <img src="/logo.svg" alt="Project LONGSHOT" className="h-12 w-auto" />
+          <img src="/globe.svg" alt="Partner logo" className="h-12 w-auto invert" />
+          <img src="/file.svg" alt="Partner logo" className="h-12 w-auto invert" />
+          <img src="/window.svg" alt="Partner logo" className="h-12 w-auto invert" />
+        </div>
       </motion.section>
 
       {/* Academic & Expert Engagement */}
