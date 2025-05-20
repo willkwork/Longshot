@@ -1,3 +1,5 @@
+"use client";
+
 import CountdownTimer from "../components/CountdownTimer";
 import Link from "next/link";
 import { motion } from "framer-motion";
