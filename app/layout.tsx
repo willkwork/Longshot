@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Inter, IBM_Plex_Sans, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Inter({
-  variable: "--font-geist-sans",
+const primary = Inter({
+  variable: "--font-primary",
   subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
-const geistMono = Roboto_Mono({
-  variable: "--font-geist-mono",
+const secondary = IBM_Plex_Sans({
+  variable: "--font-secondary",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const mono = Roboto_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
 });
 
@@ -24,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${primary.variable} ${secondary.variable} ${mono.variable} antialiased bg-background text-foreground`}
+      >
         {children}
       </body>
     </html>
