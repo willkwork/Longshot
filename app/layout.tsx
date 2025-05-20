@@ -1,19 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const plex = IBM_Plex_Sans({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-plex",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "PROJECT LONGSHOT",
@@ -26,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${plex.variable} dark`}>
+    <html lang="en" className="dark">
       <body>
         <header className="py-4 px-6 bg-gray-800 text-gray-200">
           <nav className="flex gap-4">
