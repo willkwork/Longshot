@@ -1,4 +1,3 @@
-cat > tailwind.config.js <<'EOF'
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./app/**/*.{ts,tsx,js,jsx}"],
@@ -10,4 +9,3 @@ module.exports = {
   },
   plugins: [],
 };
-EOF

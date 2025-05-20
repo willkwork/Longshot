@@ -132,24 +132,3 @@ Lead Developer: Will Kirby <will.kirby@dsit.gov.uk>
 
 © 2025 PROJECT LONGSHOT. All rights reserved.
 
-sql
-Copy
-Edit
-
-**Next steps:**  
-1. Copy this into your `README.md`, replacing the existing content.  
-2. Commit and push:
-
-   ```bash
-   git add README.md
-   git commit -m "chore: merge Next.js starter README with Project Longshot info"
-   git push origin main
-Let me know if you’d like any tweaks—e.g. reordering sections, adding badges (CI, coverage), or formatting adjustments.
-
-
-
-
-
-
-
-
