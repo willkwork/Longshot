@@ -20,6 +20,7 @@ export default function Home() {
         <img src="/logo.svg" alt="PROJECT LONGSHOT official logo" className="h-16 w-auto" />
         <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white">Aligning AI. Securing the Future.</h1>
         <p className="text-lg sm:text-xl max-w-2xl">Join world-leading experts and policymakers at the forefront of AI alignment.</p>
+
         <MotionLink
           href="#about"
           className="mt-6 inline-block bg-blue-600 text-white rounded-full px-6 py-3"
@@ -29,6 +30,7 @@ export default function Home() {
         >
           Learn More About PROJECT LONGSHOT
         </MotionLink>
+
       </motion.section>
 
       {/* Event Promotion Section */}
