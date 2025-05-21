@@ -1,13 +1,14 @@
 "use client";
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import { motion, useAnimation, MotionProps } from "framer-motion";
 
 interface ScrollRevealProps extends MotionProps {
   children: React.ReactNode;
   className?: string;
+  id?: string;
   delay?: number;
   direction?: "up" | "down" | "left" | "right";
-  as?: keyof JSX.IntrinsicElements;
+  as?: keyof React.JSX.IntrinsicElements;
 }
 
 export default function ScrollReveal({
