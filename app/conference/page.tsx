@@ -13,7 +13,7 @@ export default function ConferencePage() {
         transition={{ duration: 0.6 }}
         className="flex flex-col justify-center items-center text-center py-24 px-6 sm:py-32 gap-6 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700"
       >
-        <img src="/logo.svg" alt="Project LONGSHOT logo" className="h-16 w-auto" />
+        <img src="/logo.svg" alt="PROJECT LONGSHOT official logo" className="h-16 w-auto" />
         <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white">PROJECT LONGSHOT 2025 Conference</h1>
         <p className="text-lg sm:text-xl max-w-2xl">Shaping global policy and science for safe AI</p>
         <p className="text-md font-mono">Mid-2025 (exact dates soon)</p>

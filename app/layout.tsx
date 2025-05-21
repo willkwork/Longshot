@@ -31,7 +31,7 @@ export default function RootLayout({
         <header className="py-4 px-6 bg-gray-800 text-white">
           <div className="flex items-center justify-between">
             <a href="/" aria-label="Home">
-              <img src="/logo.svg" alt="Project LONGSHOT logo" className="h-8 w-auto" />
+              <img src="/logo.svg" alt="PROJECT LONGSHOT official logo" className="h-8 w-auto" />
             </a>
             <nav className="flex gap-4">
               <a href="/" className="hover:underline">Home</a>
