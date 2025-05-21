@@ -77,6 +77,7 @@ export default function Home() {
           <a href="#" className="hover:underline">Home</a>
           <a href="#about" className="hover:underline">About</a>
           <a href="#" className="hover:underline">Conference</a>
+          <a href="/grants" className="hover:underline">Grants</a>
         </nav>
         <form className="flex gap-2 w-full max-w-xs">
           <input type="email" placeholder="Subscribe for updates" className="flex-1 px-3 py-2 rounded text-gray-900" />

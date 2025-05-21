@@ -36,6 +36,7 @@ export default function RootLayout({
             <nav className="flex gap-4">
               <a href="/" className="hover:underline">Home</a>
               <a href="/conference" className="hover:underline">Conference</a>
+              <a href="/grants" className="hover:underline">Grants</a>
             </nav>
           </div>
         </header>
