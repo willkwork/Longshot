@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)", "var(--font-plex)", "sans-serif"],
+        sans: ["sans-serif"],
         mono: ["Menlo", "monospace"],
       },
     },
