@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface CountdownProps {
   targetDate: string; // ISO date string
@@ -30,5 +31,17 @@ export default function CountdownTimer({ targetDate }: CountdownProps) {
     return () => clearInterval(id);
   }, [targetDate]);
 
-  return <span>{timeLeft}</span>;
+  return (
+    <AnimatePresence mode="wait">
+      <motion.span
+        key={timeLeft}
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 10 }}
+        transition={{ duration: 0.2 }}
+      >
+        {timeLeft}
+      </motion.span>
+    </AnimatePresence>
+  );
 }

@@ -2,8 +2,11 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import ScrollReveal from "../../components/ScrollReveal";
 
 export default function ConferencePage() {
+  const MotionLink = motion(Link);
+  const MotionButton = motion.button;
   return (
     <div className="flex flex-col min-h-screen font-sans text-gray-900 dark:text-gray-100 bg-background">
       {/* Hero Section */}
@@ -19,16 +22,22 @@ export default function ConferencePage() {
         <p className="text-md font-mono">Mid-2025 (exact dates soon)</p>
         <form className="mt-6 flex flex-col sm:flex-row gap-2 w-full max-w-md">
           <input type="email" placeholder="Email address" className="flex-1 px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-transparent" />
-          <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Express Interest</button>
+          <MotionButton
+            type="submit"
+            className="bg-blue-600 text-white px-4 py-2 rounded"
+            whileHover={{ scale: 1.05 }}
+            whileFocus={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Express Interest
+          </MotionButton>
         </form>
       </motion.section>
 
       {/* Conference Overview */}
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.2 }}
+      <ScrollReveal
+        as="section"
+        delay={0.2}
         className="py-16 px-6 text-center flex flex-col items-center gap-4"
       >
         <h2 className="text-3xl font-semibold">Conference Overview</h2>
@@ -38,19 +47,17 @@ export default function ConferencePage() {
           <li>Global policy and governance</li>
           <li>Cutting-edge research insights</li>
         </ul>
-      </motion.section>
+      </ScrollReveal>
 
       {/* Speakers Section */}
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.4 }}
+      <ScrollReveal
+        as="section"
+        delay={0.4}
         className="bg-gray-100 dark:bg-gray-900 py-16 px-6 text-center flex flex-col items-center gap-4"
       >
         <h2 className="text-3xl font-semibold">Speakers</h2>
         <p>Announcing Speakers Soon...</p>
-      </motion.section>
+      </ScrollReveal>
     </div>
   );
 }
