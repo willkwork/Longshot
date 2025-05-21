@@ -34,7 +34,7 @@ export default function GrantsPage() {
         <p className="max-w-2xl">We welcome proposals from academics and research groups around the world. Funding cycles run throughout the year.</p>
         <MotionLink
           href="#"
-          className="bg-blue-600 text-white px-6 py-3 rounded-full"
+          className="bg-slate-600 text-white px-6 py-3 rounded-full"
           whileHover={{ scale: 1.05 }}
           whileFocus={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

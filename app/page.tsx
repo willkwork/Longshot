@@ -23,7 +23,7 @@ export default function Home() {
 
         <MotionLink
           href="#about"
-          className="mt-6 inline-block bg-blue-600 text-white rounded-full px-6 py-3"
+          className="mt-6 inline-block bg-slate-600 text-white rounded-full px-6 py-3"
           whileHover={{ scale: 1.05 }}
           whileFocus={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -47,7 +47,7 @@ export default function Home() {
           <input type="email" placeholder="Email address" className="flex-1 px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-transparent" />
           <MotionButton
             type="submit"
-            className="bg-blue-600 text-white px-4 py-2 rounded"
+            className="bg-slate-600 text-white px-4 py-2 rounded"
             whileHover={{ scale: 1.05 }}
             whileFocus={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -85,7 +85,7 @@ export default function Home() {
         <p className="max-w-2xl">We welcome mathematicians, cognitive scientists, and machine learning researchers to collaborate with us on the toughest alignment challenges.</p>
         <MotionLink
           href="#"
-          className="bg-blue-600 text-white px-6 py-3 rounded-full"
+          className="bg-slate-600 text-white px-6 py-3 rounded-full"
           whileHover={{ scale: 1.05 }}
           whileFocus={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -114,7 +114,7 @@ export default function Home() {
           <input type="email" placeholder="Subscribe for updates" className="flex-1 px-3 py-2 rounded text-gray-900" />
           <MotionButton
             type="submit"
-            className="bg-blue-600 text-white px-3 py-2 rounded"
+            className="bg-slate-600 text-white px-3 py-2 rounded"
             whileHover={{ scale: 1.05 }}
             whileFocus={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

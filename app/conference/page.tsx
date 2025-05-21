@@ -24,7 +24,7 @@ export default function ConferencePage() {
           <input type="email" placeholder="Email address" className="flex-1 px-4 py-2 rounded border border-gray-300 dark:border-gray-700 bg-transparent" />
           <MotionButton
             type="submit"
-            className="bg-blue-600 text-white px-4 py-2 rounded"
+            className="bg-slate-600 text-white px-4 py-2 rounded"
             whileHover={{ scale: 1.05 }}
             whileFocus={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
