@@ -12,7 +12,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="relative flex flex-col justify-center items-center text-center py-24 px-6 sm:py-32 gap-6 bg-gray-900/80 bg-[url('/background.svg')] bg-cover bg-center bg-no-repeat"
+        className="relative flex flex-col justify-center items-center text-center py-24 px-6 sm:py-32 gap-6 bg-gray-900/80 bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat"
       >
         <img src="/logo.svg" alt="PROJECT LONGSHOT official logo" className="h-16 w-auto" />
         <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white">Aligning AI. Securing the Future.</h1>
