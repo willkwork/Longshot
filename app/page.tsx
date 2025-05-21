@@ -12,7 +12,8 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex flex-col justify-center items-center text-center py-24 px-6 sm:py-32 gap-6 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700"
+        className="relative flex flex-col justify-center items-center text-center py-24 px-6 sm:py-32 gap-6 bg-gray-900 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/background.svg')" }}
       >
         <img src="/logo.svg" alt="Project LONGSHOT logo" className="h-16 w-auto" />
         <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white">Aligning AI. Securing the Future.</h1>
@@ -26,7 +27,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="bg-gray-100 dark:bg-gray-900 py-16 px-6 text-center flex flex-col items-center gap-4"
+        className="bg-gray-200 dark:bg-gray-800 py-16 px-6 text-center flex flex-col items-center gap-4"
       >
         <h2 className="text-3xl font-semibold">PROJECT LONGSHOT Conference 2025</h2>
         <div className="text-2xl font-mono">
@@ -64,7 +65,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className="bg-gray-100 dark:bg-gray-900 py-16 px-6 text-center flex flex-col items-center gap-4"
+        className="bg-gray-200 dark:bg-gray-800 py-16 px-6 text-center flex flex-col items-center gap-4"
       >
         <h2 className="text-3xl font-semibold">Join Leading Minds</h2>
         <p className="max-w-2xl">We welcome mathematicians, cognitive scientists, and machine learning researchers to collaborate with us on the toughest alignment challenges.</p>
