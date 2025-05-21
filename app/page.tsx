@@ -9,7 +9,7 @@ export default function Home() {
   const MotionLink = motion(Link);
   const MotionButton = motion.button;
   return (
-    <div className="flex flex-col min-h-screen font-sans text-gray-900 dark:text-gray-100 bg-background">
+    <div className="flex flex-col min-h-screen font-sans text-white bg-background">
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export default function Home() {
       <ScrollReveal
         as="section"
         delay={0.2}
-        className="bg-gray-200 dark:bg-gray-800 py-16 px-6 text-center flex flex-col items-center gap-4"
+        className="bg-slate-900 text-white py-16 px-6 text-center flex flex-col items-center gap-4"
       >
         <h2 className="text-3xl font-semibold">PROJECT LONGSHOT Conference 2025</h2>
         <div className="text-2xl font-mono">
@@ -62,11 +62,11 @@ export default function Home() {
         as="section"
         id="about"
         delay={0.4}
-        className="py-16 px-6 text-center flex flex-col items-center gap-4"
+        className="bg-gray-900 text-white py-16 px-6 text-center flex flex-col items-center gap-4"
       >
         <h2 className="text-3xl font-semibold">Backed by global leaders and top-tier academic institutions.</h2>
         <p className="max-w-3xl">PROJECT LONGSHOT is committed to advancing safe and aligned artificial intelligence. Our mission brings together policymakers, researchers, and industry to secure the future of AI.</p>
-        <div className="h-20 w-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center rounded">Logos Placeholder</div>
+        <div className="h-20 w-full bg-gray-800 flex items-center justify-center rounded">Logos Placeholder</div>
         <div className="flex flex-wrap justify-center gap-6 py-4">
           <img src="/logo.svg" alt="Project LONGSHOT" className="h-12 w-auto" />
           <img src="/globe.svg" alt="Partner logo" className="h-12 w-auto invert" />
@@ -79,7 +79,7 @@ export default function Home() {
       <ScrollReveal
         as="section"
         delay={0.6}
-        className="bg-gray-200 dark:bg-gray-800 py-16 px-6 text-center flex flex-col items-center gap-4"
+        className="bg-gray-800 text-white py-16 px-6 text-center flex flex-col items-center gap-4"
       >
         <h2 className="text-3xl font-semibold">Join Leading Minds</h2>
         <p className="max-w-2xl">We welcome mathematicians, cognitive scientists, and machine learning researchers to collaborate with us on the toughest alignment challenges.</p>
@@ -95,7 +95,7 @@ export default function Home() {
       </ScrollReveal>
 
       {/* Footer */}
-      <footer className="mt-auto py-8 px-6 bg-gray-800 text-gray-200 flex flex-col items-center gap-4 text-sm">
+      <footer className="mt-auto py-8 px-6 bg-slate-950 text-white flex flex-col items-center gap-4 text-sm">
         <nav className="flex gap-4">
           <MotionLink href="#" className="hover:underline" whileHover={{ scale: 1.05 }} whileFocus={{ scale: 1.05 }}>
             Home
