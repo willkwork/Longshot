@@ -17,7 +17,12 @@ export default function Home() {
         <img src="/logo.svg" alt="PROJECT LONGSHOT official logo" className="h-16 w-auto" />
         <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white">Aligning AI. Securing the Future.</h1>
         <p className="text-lg sm:text-xl max-w-2xl">Join world-leading experts and policymakers at the forefront of AI alignment.</p>
-        <Link href="#about" className="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-3">Learn More About PROJECT LONGSHOT</Link>
+        <Link
+          href="#about"
+          className="mt-6 inline-block rounded-full px-6 py-3 bg-blue-200/10 hover:bg-blue-200/20 text-blue-100 backdrop-blur-lg shadow-xl border border-white/20"
+        >
+          Learn More About PROJECT LONGSHOT
+        </Link>
       </motion.section>
 
       {/* Event Promotion Section */}
